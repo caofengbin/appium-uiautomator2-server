@@ -1,0 +1,8 @@
+ext {
+    // 该文件存放整个工程的配置相关信息字段
+    switchVariable = [
+            // 为true使用远端仓库的uiautomator2库依赖，为 false 使用本地集成的源代码依赖
+            useRemoteSDKLibrary: false,
+    ]
+
+}
