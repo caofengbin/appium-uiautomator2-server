@@ -1,8 +1,4 @@
-
-### appium-uiautomator2-server
-
-[![NPM version](http://img.shields.io/npm/v/appium-uiautomator2-server.svg)](https://npmjs.org/package/appium-uiautomator2-server)
-[![Downloads](http://img.shields.io/npm/dm/appium-uiautomator2-server.svg)](https://npmjs.org/package/appium-uiautomator2-server)
+### appium-uiautomator2-server 源码调试学习工程
 
 A netty server that runs on the device listening for commands and executes using UiAutomator V2.
 
