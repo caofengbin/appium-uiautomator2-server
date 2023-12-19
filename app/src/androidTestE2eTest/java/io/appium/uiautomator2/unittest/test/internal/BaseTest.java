@@ -21,6 +21,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.uiautomator.Configurator;
 
+import io.appium.uiautomator2.test.BuildConfig;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -95,9 +96,11 @@ public abstract class BaseTest {
 
     @Before
     public void launchAUT() throws JSONException {
-        dismissSystemAlert();
-        startActivity(Config.APP_NAME);
-        waitForElement(By.accessibilityId("Accessibility"));
+        if (BuildConfig.runApiDemoApk.equals("true")) {
+            dismissSystemAlert();
+            startActivity(Config.APP_NAME);
+            waitForElement(By.accessibilityId("Accessibility"));
+        }
     }
 
     protected void dismissSystemAlert() {

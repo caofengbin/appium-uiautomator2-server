@@ -30,6 +30,7 @@ android {
     buildTypes {
         debug {
             debuggable true
+            buildConfigField "String", "runApiDemoApk", "\"${rootProject.ext.switchVariable.runApiDemoApk}\""
         }
         customDebuggableBuildType {
             debuggable true

@@ -3,6 +3,9 @@ ext {
     switchVariable = [
             // 为true使用远端仓库的uiautomator2库依赖，为 false 使用本地集成的源代码依赖
             useRemoteSDKLibrary: false,
+
+            // 为true使用仓库自带的 ApiDemos-debug.apk，为 false 则不拉起测试APK，直接使用当前手机上打开的应用
+            runApiDemoApk: false,
     ]
 
 }
